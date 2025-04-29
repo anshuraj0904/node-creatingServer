@@ -71,6 +71,12 @@ const server = http.createServer((req,res)=>{
 
 }) // req => request and res => response
 
+
+// Steps to serve:-
+// Step - 1 :- Getting the url and adding it(as a suffix) to the current directory.  
+// Step - 2 :- Getting the extensionName for having it matched with the mimeType, for the format of the page which is to be served. Eg:- 'text/html'
+// Step - 3 :- Using the readfile of fs to serve the file finally, and here we need to handle the error first(we've many errors, but here in this example of ours, we only have to look out for file not found error!) 
+
 server.listen(port, ()=>{
     console.log(`Server is listening on the port:- localhost:127.0.0.1.${port}`);
     
