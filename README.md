@@ -2,7 +2,7 @@
 
 # Key Learnings:-
 
-1. Creating a basic server using http and the functionalities of https.
+1. Creating a basic server using http and the functionalities of http(mainly, the createServer) and, handling the callback function.
 
 2. reading a html file and serving it, and the fact that here the error handling is more important that serving the file. 
 
